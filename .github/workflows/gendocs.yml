@@ -31,7 +31,7 @@ jobs:
         JOB_CMAKE_PREFIX_PATH: ${{ matrix.CMAKE_PREFIX_PATH }}
         JOB_TOOLS: ${{ matrix.TOOLS }}
         JOB_SCRIPT: ${{ matrix.SCRIPT }}
-        JOB_DOCVERSION: $${ inputs.docversion }}
+        JOB_DOCVERSION: ${{ inputs.docversion }}
 
     steps:
     - name: Checkout repository
