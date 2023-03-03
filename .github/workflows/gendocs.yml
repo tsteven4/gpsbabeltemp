@@ -51,7 +51,6 @@ jobs:
           CXX=clang++
           export CXX
         fi
-        docv
         "${JOB_SCRIPT}" "${JOB_DOCVERSION:-development}"
 
     - name: 'Upload Artifacts'
