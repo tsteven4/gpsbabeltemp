@@ -4,6 +4,9 @@
 
 #echo "lat,lon,descr,name,notes,unk,unk" > ${TMPDIR}/unicsv.txt
 #cat ${REFERENCE}/mxf.mxf >> ${TMPDIR}/unicsv.txt
+which sudo
+which timedatectl
+timedatectl
 
 gpsbabel -i unicsv -f ${REFERENCE}/unicsv-test_input.txt -o gpx -F ${TMPDIR}/unicsv.gpx
 compare ${REFERENCE}/unicsv.gpx ${TMPDIR}/unicsv.gpx
